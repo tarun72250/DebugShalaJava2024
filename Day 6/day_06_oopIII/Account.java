@@ -2,7 +2,6 @@ package day_06_oopIII;
 
 public class Account {
 	
-
 	   //instance - non-static data members
 	   private int accno;
 	   private float balance;
@@ -11,10 +10,9 @@ public class Account {
 	   //its not a good approach to initialize the static data member value at time of declaration
 	   private static double int_rate; 
 	    
-	   //static block 
+	   //for static dm declare and initialized static block 
 	   static
 	   {
-		System.out.println("in static block");
 		int_rate = 4.5f;
 		//accno=1;  //Cannot make a static reference to the non-static field accno
 	   }
@@ -31,10 +29,10 @@ public class Account {
 	   {
 		this.accno = accno;
 		this.balance = balance;
-		//this.int_rate=i; //The static field Account.int_rate should be accessed in a static block or we shoulc always initialized in static block
+		this.int_rate=i; //The static field Account.int_rate should be accessed in a static block or we shoulc always initialized in static block
 	   }
 	   
-	 //copy constructor
+	   //copy constructor
 	   public Account(Account a)
 	   {
 		this.accno = a.accno;
@@ -44,12 +42,13 @@ public class Account {
 
 	   
 	   //static method which is called directly by class name
+	   //My need is to update int_rate of this class
 	   public static void updateRate(float new_rate)
 	   {
 		System.out.println("In updateRate Static method");
 		int_rate=new_rate;
-		System.out.println(int_rate);
 		//this.balance = 14000.00f;   //not allowed to access non-static
+		 // this.int_rate=new_rate;//error for this.int_rate bcoz this is to access current object.
 	   }
 
 	   //static method to access this class static method value direct with classname
@@ -59,9 +58,12 @@ public class Account {
 	   }		
 
 	   //no static method which is called by creating object
-	   public double calBalance()
+	   public void  calBalance()
 	   {
-		return balance+(balance*int_rate/100);
+		  System.out.println("Account no :"+accno);
+		  System.out.println("Balance :"+balance);
+		 double bal =balance+(balance*int_rate/100);
+		 System.out.println("Balance with interest"+bal);
 	   }	
 
 }

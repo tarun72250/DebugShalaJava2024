@@ -49,7 +49,7 @@ public class ArrayClass4 {
 		acc_arr[2] = new Account(); 
 		
 		for(int i=0;i<acc_arr.length;i++)
-			System.out.println(acc_arr[i].calBalance());
+			acc_arr[i].calBalance();
 		
 	
 		//short way for cerating array

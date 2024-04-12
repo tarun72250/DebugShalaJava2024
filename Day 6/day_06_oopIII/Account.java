@@ -14,9 +14,10 @@ public class Account {
 	   static
 	   {
 		int_rate = 4.5f;
-		//accno=1;  //Cannot make a static reference to the non-static field accno
+		//this.accno=1;  //Cannot make a static reference to the non-static field accno
 	   }
 
+	   //non-static dm are always initiliazed in constructor
 	   //default constructor
 	   public Account()
 	   {
@@ -29,7 +30,7 @@ public class Account {
 	   {
 		this.accno = accno;
 		this.balance = balance;
-		this.int_rate=i; //The static field Account.int_rate should be accessed in a static block or we shoulc always initialized in static block
+		int_rate=i; //The static field Account.int_rate should be accessed in a static block or we shoulc always initialized in static block
 	   }
 	   
 	   //copy constructor
@@ -57,7 +58,7 @@ public class Account {
 		return int_rate;
 	   }		
 
-	   //no static method which is called by creating object
+	   //non static method which is called by creating object
 	   public void  calBalance()
 	   {
 		  System.out.println("Account no :"+accno);

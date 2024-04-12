@@ -6,12 +6,15 @@ public class A_04_Date {
 	private int mm;
 	private int yy;
 	int a;
-	
 	static int count; //static data members
+	
+	
 	static // static block
 	{
 		count=0;
 	}
+	
+	
 	public A_04_Date() //default constructor
 	{
 		count++;
@@ -29,6 +32,7 @@ public class A_04_Date {
 		this.yy=yy;
 	}
 	
+	
 	public A_04_Date(Date d) // para constructor
 	{
 		count++;
@@ -40,11 +44,13 @@ public class A_04_Date {
 	}
 	public void showDate(char ch) // method
 	{
+		System.out.println("Count"+a);
 		System.out.println(dd+""+ch+mm+""+ch+yy);
 	}
 	
 	public void showDate()
 	{
+		System.out.println("Count"+a);
 		System.out.println(dd+"/"+mm+"/"+yy);
 	}
 	

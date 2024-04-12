@@ -8,13 +8,15 @@ public class Publisher {
 	
 	//default cons
 	public Publisher() {
-		
+//		this.pubid = 0;
+//		this.pub_name=null;
+//		this.pub_loc = null;
+				
 		
 	}
 
 	//para cons
 	public Publisher(int pubid, String pub_name, String pub_loc) {
-		super();
 		this.pubid = pubid;
 		this.pub_name = pub_name;
 		this.pub_loc = pub_loc;

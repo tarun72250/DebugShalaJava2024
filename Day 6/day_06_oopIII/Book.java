@@ -6,13 +6,14 @@ public class Book {
 	private String title;//refrence variable
 	private Publisher publisher;//refrence variable 
 	
-	
+	//default cons
 	public Book() {
-//		this.bookid=0;
-//		this.title="not assigned";
-//		this.publisher=new Publisher();
+		this.bookid=0;
+		this.title="not assigned";
+		this.publisher=new Publisher();
 		
 	}
+	
 	//para cons
 	public Book(int bookid, String title,int pubid , String pub_name , String pub_loc) {
 		
@@ -26,14 +27,15 @@ public class Book {
 	{
 		System.out.println("Book id: "+bookid);
 		System.out.println("Book Title: "+title);
-		if(publisher == null)
-		{
-			System.out.println("Not Assigned anything in publisher");
-		}
-		else
-		{
 			publisher.display();
-		}
+		//		if(publisher == null)
+//		{
+//			System.out.println("Not Assigned anything in publisher");
+//		}
+//		else
+//		{
+//			publisher.display();
+//		}
 	}
 	
 	public int getBookid() {

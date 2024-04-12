@@ -8,8 +8,8 @@ public class AccountDemo {
 		a1 = new Account(); //default cons calling
 	    System.out.println("Current rate : "+Account.getIntRate());//Account.getIntRate() is static method to access Account class int_rate value .
 		a1.calBalance(); // calling by object
-
-		System.out.println();
+		
+		/*System.out.println();
 		Account a2 = new Account(200,200,3.5);//parametrized cons calling
 		a2.calBalance();//  calling by object
 		//Account.updateRate(4.8f);// calling static method directly  
@@ -73,7 +73,7 @@ public class AccountDemo {
 	    if(a1==a8)
 	    	System.out.println("same");
 	    else
-	    	System.out.println("different");
+	    	System.out.println("different");*/
 	}
 
 }

@@ -14,9 +14,9 @@ public class Date {
 	   //no-arg or default constructor
 	   public Date()
 	   {
-		dd=1;
-		mm=1;
-		yy=1970;
+//		dd=0;
+//		mm=0;
+//		yy=0;
 	   }	
 	   
 	   //parameterised construtors		
@@ -43,6 +43,17 @@ public class Date {
 		System.out.println(dd+"/"+mm+"/"+yy);
 	   }
 
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
 	   public void showDate(char ch)
 	   {
 		//System.out.println(dd+ch+mm+ch+yy);   //number

@@ -11,14 +11,19 @@ public class A_04_DateDemo {
 		Date d3=new Date(d2); //param cons calling
 		
 		d2.showDate(); //22/4/1999
-		System.out.println(d2.isLeapYear());//returnfalse
+		//System.out.println(d2.isLeapYear());//returnfalse
 		d2.showDate('-'); // 22-04-1999
 		d3.showDate(); // 22/04/1999
-		System.out.println(d3.isLeapYear());  //false
-		if(d2.isLeapYear())
-			System.out.println("Leap year");
-		else
-			System.out.println("Not Leap year");
+		//d2.showDate(); it is not workable 
+		
+		
+		
+		
+//		System.out.println(d3.isLeapYear());  //false
+//		if(d2.isLeapYear())
+//			System.out.println("Leap year");
+//		else
+//			System.out.println("Not Leap year");
 
 	}
 

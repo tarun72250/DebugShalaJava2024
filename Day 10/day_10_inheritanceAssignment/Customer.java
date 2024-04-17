@@ -2,7 +2,7 @@ package day_10_inheritanceAssignment;
 
 public class Customer {
 
-		String emailId;
+		private String emailId;
 	    String address;
 
 	    public Customer(String emailId, String address) {
@@ -17,4 +17,11 @@ public class Customer {
 		   System.out.println("Customer Address : "+address);
 	        System.out.println("Final price for regular customer: $" + shoppingPrice);
 	    }
+
+	public String getEmailId()
+	{
+		return emailId;
+	}
+	   
+	   
 }

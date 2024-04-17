@@ -15,7 +15,7 @@ public class Emp extends Person {
 		}
 
 		//Parametrized constructor
-	    Emp(String name, int age, int empid, double salary) {
+	    public Emp(String name, int age, int empid, double salary) {
 	        super(name, age);//this super will becomes 1st
 	        this.empid = empid;
 	        this.salary = salary;

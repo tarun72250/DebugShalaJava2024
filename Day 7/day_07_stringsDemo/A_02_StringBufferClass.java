@@ -43,12 +43,14 @@ public class A_02_StringBufferClass {
         //4. delete() method
         StringBuffer sb4 = new StringBuffer("DqqqqqqebugShala");
         sb4.delete(1, 7);
-        System.out.println(sb4);
+        System.out.println(sb4);//DebugShala
         
         //5. reverse() method
         StringBuffer sb5 = new StringBuffer("avaJ gninraeL");
         sb5.reverse();
-        System.out.println(sb5);
+        System.out.println(sb5);//Learning Java
+        
+        
 }
 
 }

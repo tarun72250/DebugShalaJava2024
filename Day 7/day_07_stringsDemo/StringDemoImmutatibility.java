@@ -10,7 +10,7 @@ public class StringDemoImmutatibility {
 		System.out.println(str);
 		
 		
-		String s = str.concat("Java");
+		String s = str.concat(" Java");
 		System.out.println(s);
 		
 	}

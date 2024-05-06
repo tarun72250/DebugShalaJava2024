@@ -4,6 +4,10 @@ public class A_02_Datatypes {
 
 	public static void main(String[] args)
 	{
+		
+		
+		
+		
 		/*
 		 Java Variables
 		Variables are containers for storing data values.

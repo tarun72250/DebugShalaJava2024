@@ -1,6 +1,6 @@
 package day_01_debugShala;
 
-public class A_01_HelloWorld {
+class A_01_HelloWorld {
 
 		public static void main(String [] args)
 		{

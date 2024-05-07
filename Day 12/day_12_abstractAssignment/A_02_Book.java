@@ -30,4 +30,5 @@ public abstract class A_02_Book {
 		return cost;
 	}
 
+	
 }

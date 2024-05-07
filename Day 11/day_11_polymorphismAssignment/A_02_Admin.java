@@ -4,11 +4,12 @@ public class A_02_Admin extends A_01_Emp {
 
 	private double bonus;
 
+	//default cons
 	public A_02_Admin() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
+	//para cons
 	public A_02_Admin(String name,int age, int dd, int mm, int yy, int empid, float salary,double bonus) {
 		super(name,age, dd, mm, yy, empid, salary);
 		// TODO Auto-generated constructor stub

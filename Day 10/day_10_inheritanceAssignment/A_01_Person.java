@@ -8,8 +8,7 @@ public class A_01_Person {
     //Default Constructor
     public A_01_Person()
     {
-    	name="Sumit";
-    	age=20;
+    	
     }
     
     //Parametrized constructor
@@ -18,7 +17,7 @@ public class A_01_Person {
         this.age = age;
     }
 
-    //Instance Method , 
+    //Instance Member Method , 
     public void display() {
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);

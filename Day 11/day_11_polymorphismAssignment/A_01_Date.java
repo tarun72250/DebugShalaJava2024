@@ -31,10 +31,12 @@ public class A_01_Date {
 		System.out.println(dd+"/"+mm+"/"+yy);
 	}
 	
-	
 	@Override
 	public String toString() {
-		return "Date [dd=" + dd + ", mm=" + mm + ", yy=" + yy + "]";
+		return "A_01_Date [dd=" + dd + ", mm=" + mm + ", yy=" + yy + "]";
 	}
+	
+	
+	
 	
 }

@@ -5,7 +5,7 @@ public class A_01_Person {
 
 	private String name;
     private int age;
-    A_01_Date bdate;
+    A_01_Date bdate;//has a relationship
 
    
     public A_01_Person() {

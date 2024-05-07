@@ -6,10 +6,12 @@ public class A_02_SalesManager extends A_01_Emp {
 	private int target;
 	private double incentive;
 	
+	//Default cons
 	public A_02_SalesManager() {
 		super();
 	}
 	
+	//Para cons
 	public A_02_SalesManager(String name,int age , int dd, int mm, int yy, int empid, float salary, int target, double incentive) {
 		super(name,age, dd, mm, yy, empid, salary);
 		this.target = target;

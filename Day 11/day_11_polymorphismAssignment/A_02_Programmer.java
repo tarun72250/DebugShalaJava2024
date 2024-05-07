@@ -5,12 +5,13 @@ public class A_02_Programmer extends A_01_Emp {
 	private int extraHours;
 	private int chargesPerHours;
 	
-	
+	//default cons
 	public A_02_Programmer()
 	{
 		
 	}
 	
+	//para cons
 	public A_02_Programmer(String name ,int age,int dd , int mm , int yy, int empid , float sallary, int extraHours, int chargesPerhours)
 	{
 		super(name,age,dd,mm,yy,empid,sallary);

@@ -13,15 +13,21 @@ public class A_03Customer {
 	   public  void giveDiscount(double shoppingPrice) {
 	        // Customer gets no discount
 	       // double finalPrice = shoppingPrice;
+		 //  System.out.println("Emailid :"+emailId+" Address :"+address+" FinalPrice :"+shoppingPrice);
 		   System.out.println("Customer mail id : "+emailId);
 		   System.out.println("Customer Address : "+address);
-	        System.out.println("Final price for regular customer: $" + shoppingPrice);
+	       System.out.println("Final price for regular customer: $" + shoppingPrice);
 	    }
 
+	//getter ()
 	public String getEmailId()
 	{
 		return emailId;
 	}
 	   
+	public String getAddress()
+	{
+		return address;
+	}
 	   
 }

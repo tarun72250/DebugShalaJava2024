@@ -14,8 +14,8 @@ public class A_03_RegCustomer extends A_03Customer {
         double discount = shoppingPrice * 0.05;
         double finalPrice = shoppingPrice - discount;
         System.out.println("Customer Emailid : "+super.getEmailId());
-        System.out.println("Customer Address : "+super.address);
-        System.out.println("Customer Registration no : "+regNo);
+        System.out.println("Customer Address : "+super.address);//because we declare non-private address in super class
+        System.out.println("Customer Registration no : "+this.regNo);
         System.out.println("Final price for regular customer (with 5% discount): $" + finalPrice);
     }
 }

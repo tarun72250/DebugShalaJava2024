@@ -27,6 +27,13 @@ public class A_01_Admin extends A_01_Emp{
 		System.out.println("Calling From Admin");
 		return super.toString()+"\nBonus : "+bonus;
 	}
+
+	//1 way
+//	@Override
+//	public double calSalary() {
+//		
+//		return bonus + super.getSalary();
+//	}
 	
 	//use protected 
 	public double calSalary() {

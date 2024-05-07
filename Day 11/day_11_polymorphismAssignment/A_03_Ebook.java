@@ -14,7 +14,7 @@ public class A_03_Ebook extends A_03_Book{
 	        double originalCost = super.calculateCost();
 	        if (originalCost <= 500) 
 	        {
-	            return originalCost - 296;
+	            return originalCost  * 0.02;
 	        }
 	        else if (originalCost > 500 && originalCost <= 1000) 
 	        {

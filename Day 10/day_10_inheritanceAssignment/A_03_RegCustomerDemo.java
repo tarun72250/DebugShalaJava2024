@@ -5,7 +5,49 @@ import java.util.Scanner;
 public class A_03_RegCustomerDemo {
 
 	public static void main(String[] args) {
-		 	Scanner scanner = new Scanner(System.in);
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter type of address (1-RCus , 2-Cus)");
+		int type = sc.nextInt();
+		
+		System.out.println("Enter email :");
+		String email = sc.next();
+		System.out.println("Enter address :");
+		String address = sc.next();
+		
+		
+		if(type == 1)
+		{
+			System.out.println("Enter Regno :");
+			int regno= sc.nextInt();
+			
+			System.out.println("Enter Shopping Price :");
+			double sprice= sc.nextDouble();
+			
+			A_03_RegCustomer rc = new A_03_RegCustomer(email,address,regno);
+			rc.giveDiscount(sprice);
+			
+		}
+		
+		else if(type ==2)
+		{
+			
+			System.out.println("Enter Shopping Price :");
+			double sprice= sc.nextDouble();
+			
+			A_03Customer c = new A_03Customer(email,address);
+			c.giveDiscount(type);
+		}
+		else
+		{
+			System.out.println("Invalid type");
+		}
+
+	}
+
+}
+/*
+Scanner scanner = new Scanner(System.in);
 
 	        System.out.println("Enter type of customer (1 - Regular Customer, 2 - Customer):");
 	        int type = scanner.nextInt();
@@ -45,7 +87,4 @@ public class A_03_RegCustomerDemo {
 	        }
 
 	        scanner.close();
-
-	}
-
-}
+*/

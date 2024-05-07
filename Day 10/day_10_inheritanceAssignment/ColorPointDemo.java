@@ -4,14 +4,13 @@ public class ColorPointDemo {
 
 	public static void main(String[] args) {
 		
+		ColorPoint c = new ColorPoint();//default cons calling
+		c.display();
 		
-			ColorPoint cp1 = new ColorPoint(10, 20, "red");
-	        ColorPoint cp2 = new ColorPoint(30, 40, "green");
-	        ColorPoint cp3 = new ColorPoint(50, 60, "purple");
-
-	        System.out.println("ColorPoint 1: " + cp1.toString());
-	        System.out.println("ColorPoint 2: " + cp2);
-	        System.out.println("ColorPoint 3: " + cp3);
+		ColorPoint c1 = new ColorPoint(2,3,"red");//para cons calling
+		c1.display();
+		
+		ColorPoint c2 = new ColorPoint(4,5,"violet");//para cons calling
+		c2.display();			
 	}
-
 }

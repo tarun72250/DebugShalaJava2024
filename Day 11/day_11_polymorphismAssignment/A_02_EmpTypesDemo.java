@@ -4,9 +4,6 @@ public class A_02_EmpTypesDemo {
 
 	public static void main(String[] args) {
 
-//		Emp e1 = new SalesManager();
-//		e1.display();
-		
 		A_01_Emp [] allemp;
 		allemp = new A_01_Emp[3];//creating array object 
 		allemp[0]=new A_02_SalesManager("Asfiya",23,11,11,1111,101,20000.0f,10000,1000.0f);
@@ -31,16 +28,22 @@ public class A_02_EmpTypesDemo {
 			//ex:- cricket match when refry says start every player acts as different role.
 			System.out.println("---------------------------------");
 		}
-		//for toString
-		for(int i=0 ; i<allemp.length ; i++)
-		{
-			System.out.println(allemp[i]);//allemp[i].toString();
-			System.out.println("---------------------------------");
-
-		}
-	
-	
+//		//for toString
+//		for(int i=0 ; i<allemp.length ; i++)
+//		{
+//			System.out.println(allemp[i]);//allemp[i].toString();
+//			System.out.println("---------------------------------");
+//
+//		}
+		
 	}
 	
 
 }
+/*
+
+//		Emp e1 = new SalesManager();
+//		e1.display();
+		
+		
+*/

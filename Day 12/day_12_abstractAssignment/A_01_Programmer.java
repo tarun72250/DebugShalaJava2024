@@ -33,12 +33,21 @@ public class A_01_Programmer extends A_01_Emp{
 		return super.toString() +"\nextraHours :" + extraHours + "\nchargesPerHours=" + chargesPerHours;
 	}
 
+	//1 way
+//	@Override
+//	public double calSalary() {
+//		
+//		return super.getSalary()+(chargesPerHours*extraHours);
+//	}
+
 	
 	
-	//use protected
+	//2 way use protected
 	@Override
 	public double calSalary() {
 		//directly salary accesible bcoz of protected in Emp() class
 		return salary+(extraHours * chargesPerHours);
 	}
+	
+	
 }

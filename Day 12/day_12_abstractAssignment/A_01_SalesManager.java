@@ -30,10 +30,16 @@ public class A_01_SalesManager extends A_01_Emp{
 		return super.toString()+"\nExtra Target : "+target+"\nExtra Incentive : "+incentive;
 	}
 	
-	//use protected 
-		@Override
-		public double calSalary() {
-			//directly salary accesible bcoz of protected in Emp() class
-			return salary + (salary * incentive/100);
-		}
+	//2 way use protected 
+	public double calSalary()
+	{
+		return salary +(salary * incentive /100);
+	}
+	
+	
+//	  //1 way
+//	  public double calSalary()
+//	  {
+//		  return super.getSalary()+ (super.getSalary() * incentive /100);
+//	  }
 }

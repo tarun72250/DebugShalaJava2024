@@ -1,24 +1,52 @@
 package day_10_inheritanceAssignment;
-import java.util.Arrays;
-public class ColorPoint extends Point {
 
-    String color;
-    
-    static String[] colors = {"red", "blue", "green", "yellow"};
+public class ColorPoint extends Point{
 
-    public ColorPoint(int x, int y, String color) {
-        super(x, y);
-        if (Arrays.asList(colors).contains(color)) {
-            this.color = color;
-        } else 
-        {
-            this.color = "white";
-        }
-    }
-
-    @Override
-    public String toString() {
-        return super.toString() + " - Color: " + color;
-    }
-
+	private String color;
+	
+	private static String [] colors;
+	
+	static 
+	{	
+		colors = new String[4];
+		colors[0] = "yellow";
+		colors[1] = "red";
+		colors[2] = "blue";
+		colors[3] = "orange";
+	}
+	
+	public ColorPoint()
+	{
+		
+	}
+	
+	//para cons
+	public ColorPoint(int x , int y , String color)
+	{
+		super(x,y);
+		boolean flag = false;
+		
+		for(int i =0 ; i<colors.length;i++)
+		{
+			if(colors[i].equals(color))
+			{
+				this.color=color;
+				flag=true;
+				break;
+			}
+		}
+		
+		if(flag==false)
+		{
+			this.color="white";
+		}
+	}
+	
+	public void display()
+	{
+		super.display();
+		System.out.println("color :"+color);
+	}
+	
+	
 }

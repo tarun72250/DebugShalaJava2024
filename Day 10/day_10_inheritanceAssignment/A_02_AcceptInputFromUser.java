@@ -6,7 +6,44 @@ public class A_02_AcceptInputFromUser {
 
 	public static void main(String[] args) {
 	
-	Scanner sc ; // refrence variable 
+	Scanner sc = new Scanner(System.in);
+	
+//	System.out.println("Enter integer value :");
+//	int n = sc.nextInt();
+//	
+//	System.out.println("Enter String value :");
+//	String var = sc.next();
+//	
+//	System.out.println("Enter Floating Value :");
+//	float fvar = sc.nextFloat();
+//	
+//	System.out.println("Enter Boolean value :");
+//	boolean bvar = sc.nextBoolean();
+//	
+//	System.out.println(n +" : "+var+" : "+fvar+" : "+bvar);
+	
+	System.out.println("Enter Name");
+	String name = sc.next();
+	
+	System.out.println("Enter age :");
+	int age = sc.nextInt();
+	
+	A_01_Person p = new A_01_Person(name,age);
+	p.display();
+	
+	
+	
+	
+	
+	sc.close();
+	
+		
+	}
+
+}
+
+/*
+Scanner sc ; // refrence variable 
 	sc = new Scanner(System.in);
 	
 	System.out.println("Enter integer value :");
@@ -39,29 +76,4 @@ public class A_02_AcceptInputFromUser {
 		
 		
 		
-		
-	}
-
-}
-/*
- Scanner sc = new Scanner(System.in);
-//		System.out.println("Accept integer value :");
-//		int no = sc.nextInt();
-//		System.out.println("Integer value :"+no);
-		
-//		System.out.println("Accept String value :");
-//		String msg = sc.next();
-//		System.out.println("String value :"+msg);
-//		
-//		System.out.println("Accept Floating value :");
-//		float fl = sc.nextFloat();
-//		System.out.println("String value :"+fl);
-		
-		System.out.println("Accept integer value :");
-		int dd = sc.nextInt();
-		int mm = sc.nextInt();
-		int yy = sc.nextInt();
-		
-		Date d = new Date(dd,mm,yy);
-		d.showDate();
-*/
+ */

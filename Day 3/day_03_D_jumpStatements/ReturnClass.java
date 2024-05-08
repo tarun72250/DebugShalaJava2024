@@ -2,7 +2,80 @@ package day_03_D_jumpStatements;
 
 public class ReturnClass {
 	
-	public static int findSum(int n , int m)
+	//static method
+	public static int findSum(int a , int b)
+	{
+		return a+b;
+	}
+	
+	//static method
+	public static String namePrinting(String name)
+	{
+		return "Welcome " +name;
+	}
+	
+	//non static method
+	public void floatSum(float x , float y)
+	{
+		System.out.println("Floating value sum :"+(x+y));
+	}
+	
+	public static void main(String[] args) {
+		
+		ReturnClass r = new ReturnClass();
+		r.floatSum(23.0f, 23.0f);
+		
+		System.out.println(ReturnClass.namePrinting("Sumit"));
+		System.out.println("\nFinal Result "+ReturnClass.findSum(2, 3));
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+public static int findSum(int n , int m)
 	{
 	
 		int sum = n+m;
@@ -37,4 +110,4 @@ public class ReturnClass {
 
 	}
 
-}
+*/

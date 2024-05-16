@@ -17,6 +17,7 @@ public class A_05_NameException extends Exception{
 		msg=" letter of First Name should be Capital";
 	}
 	
+	
 	public String tostring() {
 		return msg;
 	}

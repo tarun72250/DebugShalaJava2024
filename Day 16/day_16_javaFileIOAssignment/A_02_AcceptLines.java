@@ -14,6 +14,7 @@ public class A_02_AcceptLines {
 			//1.open the stream
 			//This line creates new BufferedReader object, which reads standard input stream (System.in). It's wrapped in InputStreamReader to convert bytes into characters.
 			br = new BufferedReader( new InputStreamReader(System.in));
+			
 			String line;
 			System.out.println("Enter 'stop' to quit");
 			

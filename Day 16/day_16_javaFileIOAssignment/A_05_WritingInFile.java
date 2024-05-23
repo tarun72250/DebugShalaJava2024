@@ -13,13 +13,14 @@ import java.io.OutputStream;
 public class A_05_WritingInFile
 {
 	public static void main(String[] args) {
-		OutputStream os =null;
-		BufferedReader br = null;
+		OutputStream os =null;//writting your input into file
+		BufferedReader br = null;//for taking input from user 
 		try
 		{
 			br = new BufferedReader(new InputStreamReader(System.in));
 			//os = new FileOutputStream("D:\\Java IO DebugShala\\c.txt");
-			os = new FileOutputStream("D:\\Java IO DebugShala\\c.txt",true);
+			os = new FileOutputStream("D:\\Java IO DebugShala\\d.txt",true);
+			
 			System.out.println("Enter 'stop' to quit");
 			
 			String line;

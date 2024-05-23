@@ -17,7 +17,7 @@ public class A_04_ReadingFromFile {
 		//how to read characters from a file using the FileInputStream
 		//1. way
 //		InputStream i = new FileInputStream("D:\\Java IO DebugShala\\a.txt");
-		
+//		
 //		int n;
 //		
 //		while((n = i.read())!= -1)
@@ -43,12 +43,19 @@ public class A_04_ReadingFromFile {
 		
 		//3.way Take input from console and write that in File
 		OutputStream o = new FileOutputStream("D:\\Java IO DebugShala\\c.txt");
-		Writer w = new FileWriter("D:\\Java IO DebugShala\\c.txt"); 
-		//o.write("Welcome Hello All Learning Java ".getBytes());
-		w.write("Rajat");
+		
+		//Writer w = new FileWriter("D:\\Java IO DebugShala\\c.txt"); 
+		String output = "Welcome Hello All Learning Java  by Changing input";
+		
+		String text = output + System.lineSeparator();
+
+		o.write(text.getBytes());
+		//w.write("Rajat");
+		
+		
 		System.out.println("Printed Succesfully....!");
 		o.close();
-		w.close();
+		//w.close();
 
 		
 		

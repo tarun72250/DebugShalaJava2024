@@ -4,6 +4,7 @@ public class A_06_PasswordTooLongExp extends Exception {
 	
 	String msg="Pass Too Long";
 	 
+	//default cons
 	public A_06_PasswordTooLongExp ()
 	{
 		msg="Pass too long";
@@ -13,7 +14,7 @@ public class A_06_PasswordTooLongExp extends Exception {
 		return msg;
 	}
 	
-	public String tostring()
+	public String toString()
 	{
 		return msg;
 	}

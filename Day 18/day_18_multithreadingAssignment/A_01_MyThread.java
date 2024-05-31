@@ -1,6 +1,7 @@
 package day_18_multithreadingAssignment;
 
 //Creating Thread by extending Thread class
+<<<<<<< HEAD
 //join();
 //sleep(); :- static method :-  Thread.sleep();
 //start();
@@ -33,6 +34,11 @@ public class A_01_MyThread extends Thread
 /*
 
 //task to be performed by thread
+=======
+public class A_01_MyThread extends Thread {
+
+	//task to be performed by thread
+>>>>>>> b1affeeedf5b320f66b7032471a5395449274ec1
 	@Override
 	public void run()
 	{
@@ -49,4 +55,10 @@ public class A_01_MyThread extends Thread
 			}
 		}
 	}
+<<<<<<< HEAD
 */
+=======
+	
+
+}
+>>>>>>> b1affeeedf5b320f66b7032471a5395449274ec1

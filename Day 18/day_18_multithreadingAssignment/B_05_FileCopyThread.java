@@ -6,7 +6,11 @@ import java.io.*;
 public class B_05_FileCopyThread implements Runnable 
 {
     private String sourceFile;
+<<<<<<< HEAD
     private String destinationFile; 
+=======
+    private String destinationFile;
+>>>>>>> b1affeeedf5b320f66b7032471a5395449274ec1
 
     public B_05_FileCopyThread(String sourceFile, String destinationFile) 
     {

@@ -6,18 +6,27 @@ public class A_02_MyTaskApp
 
 	public static void main(String[] args) 
 	{
+<<<<<<< HEAD
 		Runnable r ;
 		r = new A_02_MyTask();
 		
 		Thread t = new Thread(r);
 		
+=======
+		Runnable r = new A_02_MyTask();
+		Thread t = new Thread(r);
+>>>>>>> b1affeeedf5b320f66b7032471a5395449274ec1
 		t.start();   //r.run() ready to run
 		for(int i=1;i<=5;i++)
 		{
 			try 
 			{
 				System.out.println("Main thread : "+i);
+<<<<<<< HEAD
 				Thread.sleep(1500);//static method
+=======
+				Thread.sleep(500);//static method
+>>>>>>> b1affeeedf5b320f66b7032471a5395449274ec1
 			}
 			catch (InterruptedException e) 
 			{

@@ -10,8 +10,13 @@ public class B_05_FileCopyThreadDemo {
     {
         BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
 
+<<<<<<< HEAD
         try  
         { 
+=======
+        try 
+        {
+>>>>>>> b1affeeedf5b320f66b7032471a5395449274ec1
 //            System.out.print("D:\\Java IO DebugShala\\MultiThreading Demos\\a.txt");
 //            String sourceFile = consoleReader.readLine();
 //            System.out.print("D:\\\\Java IO DebugShala\\\\MultiThreading Demos\\\\b.txt");

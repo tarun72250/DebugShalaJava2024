@@ -5,6 +5,7 @@ public class B_01_DefaultThreadInfo
 {
     public static void main(String[] args) 
     {
+<<<<<<< HEAD
     
     	
     	Thread t = Thread.currentThread();
@@ -16,3 +17,10 @@ public class B_01_DefaultThreadInfo
     }
 }
  
+=======
+        Thread defaultThread = Thread.currentThread();
+        System.out.println("Thread Name: " + defaultThread.getName());
+        System.out.println("Thread Priority: " + defaultThread.getPriority());
+    }
+}
+>>>>>>> b1affeeedf5b320f66b7032471a5395449274ec1

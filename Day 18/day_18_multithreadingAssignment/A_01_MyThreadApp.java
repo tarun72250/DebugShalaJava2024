@@ -1,5 +1,6 @@
 package day_18_multithreadingAssignment;
 
+<<<<<<< HEAD
 public class A_01_MyThreadApp 
 {
 
@@ -33,6 +34,12 @@ public class A_01_MyThreadApp
 /*
 public static void main(String[] args) 
 	{
+=======
+public class A_01_MyThreadApp extends Thread{
+
+	public static void main(String[] args) 
+	{
+>>>>>>> b1affeeedf5b320f66b7032471a5395449274ec1
 		//main thread
 		A_01_MyThread t = new A_01_MyThread();
 		t.start();
@@ -46,4 +53,9 @@ public static void main(String[] args)
 			}
 		}
 	}
+<<<<<<< HEAD
 */
+=======
+
+}
+>>>>>>> b1affeeedf5b320f66b7032471a5395449274ec1

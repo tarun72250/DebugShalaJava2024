@@ -15,7 +15,7 @@ public class A_07_InvalidCountryExcep extends Exception {
 		msg="Out the country is not allowed";
 	}
 
-	public String tostring() {
+	public String toString() {
 		return msg;
 	}
 }

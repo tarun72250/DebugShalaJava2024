@@ -1,6 +1,7 @@
 package day_18_multithreadingAssignment;
 
 //Creating Thread by implementing Runnable interface
+<<<<<<< HEAD
 public class A_02_MyTask implements Runnable 
 {
 
@@ -25,6 +26,11 @@ public class A_02_MyTask implements Runnable
 }
   /*
    //task to be performed by thread
+=======
+public class A_02_MyTask implements Runnable {
+
+	//task to be performed by thread
+>>>>>>> b1affeeedf5b320f66b7032471a5395449274ec1
 		@Override
 		public void run()
 		{
@@ -41,4 +47,8 @@ public class A_02_MyTask implements Runnable
 				}
 			}
 		}
+<<<<<<< HEAD
    */
+=======
+}
+>>>>>>> b1affeeedf5b320f66b7032471a5395449274ec1

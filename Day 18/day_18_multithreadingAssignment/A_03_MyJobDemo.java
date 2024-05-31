@@ -5,7 +5,10 @@ public class A_03_MyJobDemo {
 	public static void main(String[] args) 
 	{
 		A_03_MyJob j = new A_03_MyJob(); //newly created
+<<<<<<< HEAD
 		
+=======
+>>>>>>> b1affeeedf5b320f66b7032471a5395449274ec1
 		j.getT().start();   //ready to run (thread pool)
 		
 		for(int i=1;i<=5;i++)

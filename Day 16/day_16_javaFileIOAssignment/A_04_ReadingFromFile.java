@@ -15,39 +15,57 @@ public class A_04_ReadingFromFile {
 	public static void main(String[] args) throws IOException 
 	{
 		//how to read characters from a file using the FileInputStream
-		//1 way.
-//		InputStream i = new FileInputStream("D:\\Java IOProject Programs\\Asfiya.txt");
+		//1. way
+//		InputStream i = new FileInputStream("D:\\Java IO DebugShala\\a.txt");
+//		
 //		int n;
-//		while((n = i.read()) != -1)
+//		
+//		while((n = i.read())!= -1)
 //		{
 //			System.out.print((char)n);
 //		}
+//		
 //		i.close();
+//		
 		
-		//2 way
-		Reader r = new FileReader("D:\\Java IOProject Programs\\Asfiya.txt");
-		int n;
-		while((n = r.read()) != -1)
-		{
-			System.out.print((char)n);
-		}
-		r.close();
+		//2.way
+//		Reader r = new FileReader("D:\\\\Java IO DebugShala\\\\b.txt");
+//
+//		int n;
+//
+//		while((n = r.read())!= -1)
+//		{
+//			System.out.print((char)n);
+//		}
+//		
+//		r.close();
 		
-		//3 way.
-//		OutputStream o = new FileOutputStream("D:\\Java IOProject Programs\\FileOutputStream.txt");
-//		Writer w = new FileWriter("D:\\Java IOProject Programs\\FileOutputStream.txt");
-//	//	o.write("Welcome ".getBytes());
-//		w.write("welcome by tarun");
-//		System.out.println("Printed Succesfully....!");
-//		o.close();
-//		w.close();
+		
+		//3.way Take input from console and write that in File
+		OutputStream o = new FileOutputStream("D:\\Java IO DebugShala\\c.txt");
+		
+		//Writer w = new FileWriter("D:\\Java IO DebugShala\\c.txt"); 
+		String output = "Welcome Hello All Learning Java  by Changing input";
+		
+		String text = output + System.lineSeparator();
+
+		o.write(text.getBytes());
+		//w.write("Rajat");
+		
+		
+		System.out.println("Printed Succesfully....!");
+		o.close();
+		//w.close();
+
+		
+		
 	}
 
 }
 
 /*
 
-//how to read characters from a file using the FileInputStream
+//      how to read characters from a file using the FileInputStream
 		InputStream i = new FileInputStream("D:\\Java IOProject Programs\\Demo.txt");
 //		int n; 
 //		while( (n = i.read()) != -1 )

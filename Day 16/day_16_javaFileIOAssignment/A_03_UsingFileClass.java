@@ -6,36 +6,41 @@ import java.util.Date;
 public class A_03_UsingFileClass {
 	public static void main(String[] args)
 	{
-		/*File f = new File("D:\\Java IOProject Programs");
-		System.out.println("Exists : "+f.exists());
+		
+		/*File f = new File("D:\\Java IO DebugShala");
+		System.out.println("Exists :"+f.exists());
 		System.out.println("Directory :"+f.isDirectory());
 		System.out.println("is file : "+f.isFile());
 		System.out.println("readable : "+f.canRead());
 		System.out.println("executable : "+f.canExecute());
 		System.out.println("Size : "+f.length());
 		Date d = new Date(f.lastModified());
-		System.out.println("Last Modified :"+d);
+		System.out.println("Last modified :"+d);
+		
 		*/
 		
-		File f = new File("D:\\Java IOProject Programs");
+		File f = new File("D:\\Java IO DebugShala");
 		if(f.isDirectory())
 		{
-			System.out.println("Directory contents : ");
+			System.out.println("Directory Contents :");
 			File [] file = f.listFiles();
 			
-			for(File f1 : file)
+			for(File f1 :file)
 			{
 				if(f1.isDirectory())
 				{
-					File [] files = f1.listFiles();
-					for(File f2:files)
+					File [] f2 = f1.listFiles();
+					for(File files :f2)
 					{
-						System.out.println("......"+f2.getName());
+						System.out.println("...."+files.getName());
 					}
 				}
 				else if(f1.isFile())
+				{
 					System.out.println(f1.getName());
+				}
 			}
+			
 		}
 		
 	}

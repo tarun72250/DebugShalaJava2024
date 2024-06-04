@@ -48,10 +48,48 @@ public class MyQueue
 			if( front == -1 && rear ==-1 )
 			{
 				front = 0;
-				rear++;
-				arr[rear] = element;
 			}
+			rear++;
+			arr[rear] = element;
 		}
 	}
+	
+	//deleted the element
+	public int deQueue()
+	{
+		int ele =0;
+		if(isEmpty())
+		{
+			System.out.println("Queue is empty...!");
+		}
+		else
+		{
+			ele=arr[front];
+			front++;
+			if(front > rear)
+			{
+				front = -1;
+				rear = -1;
+			}
+				
+		}
+		
+		return ele;
+	}
+	
+	//display method
+	public void display()
+	{
+		if(isEmpty())
+			System.out.println("Queue is Empty");
+		System.out.println();
+		System.out.println("----------------------------------");
+		for(int i=front ; i<=rear ;i++)
+		{
+			System.out.print(arr[i]+" | ");
+		}
+		System.out.println("\n-----------------------------------");
+	}
+	
 	
 }

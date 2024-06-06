@@ -7,24 +7,32 @@ public class A_09_Employeedemo {
 
 	public static void main(String[] args)
 	{
-	
+		//1.way
+		//Logic of Comparator implements here 
+		//or Lambda Function
+//		Set<A_09_Employee> set = new TreeSet<>(
+//		(A_09_Employee o1 , A_09_Employee o2)->
+//		{
+//			int diff ;
+//			diff = o2.sal-o1.sal;
+//			if(diff == 0  )
+//			{
+//				diff = o1.name.compareTo(o2.name);
+//				if(diff == 0)
+//				{
+//					 diff = o1.eid - o2.eid; // Use employee ID for uniqueness
+//				}
+//			}
+//			return diff;
+//		});
 
-			Set<A_09_Employee> set = new TreeSet<>( 
-					(A_09_Employee o1 , A_09_Employee o2)->
-					{
-						int diff ;
-						diff = o2.sal-o1.sal;
-						if(diff == 0  )
-						{
-							diff = o1.name.compareTo(o2.name);
-						}
-						return diff;
-					}
-					);
-			
+		
+			//2.way
+			Set<A_09_Employee> set = new TreeSet<>(new EmployeeComparator());
+
 			//()->{};
 			
-			
+			//this sorting only based by sallery thats y other duplicates records will removed.
 			set.add(new A_09_Employee(101,"Nitesh",200000));
 			set.add(new A_09_Employee(102,"Pravesh",200000));
 			set.add(new A_09_Employee(103,"Arpit",300000));
@@ -45,6 +53,7 @@ public class A_09_Employeedemo {
 
 
 /*
+
 
 Set<A_09_Employee> emp=new TreeSet<>
 		(

@@ -8,7 +8,9 @@ import java.util.Map.Entry;
 // arrange in sorted manner according to key
 public class A_13_TreeMapDemo {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
+	
 		Map<String , Integer > m = new TreeMap<>();
 		m.put("One", 1);
 		m.put("Two", 2);
@@ -55,6 +57,41 @@ public class A_13_TreeMapDemo {
 			Entry<Integer,String> e = i.next();
 			System.out.println(e.getKey()+" : "+e.getValue());
 		}
+
+		
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+	
+*/

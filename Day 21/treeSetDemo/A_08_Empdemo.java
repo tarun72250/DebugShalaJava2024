@@ -11,7 +11,7 @@ public class A_08_Empdemo {
 		set.add( new A_08_Emp(112 , "Arpit", 300000,10));
 		set.add( new A_08_Emp(111 , "Balkrishna", 400000,20));
 		set.add( new A_08_Emp(104 , "Naman", 500000,30));
-		set.add( new A_08_Emp(106 , "Pravesh", 600000,10));
+		set.add( new A_08_Emp(106 , "Arpit", 300000,10));
 	
 		
 		for(A_08_Emp e :set)

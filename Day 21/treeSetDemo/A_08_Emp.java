@@ -2,58 +2,8 @@ package treeSetDemo;
 
 public class A_08_Emp implements Comparable<A_08_Emp>
 {
-	int eid ;
-	String name ;
-	int sal ;
-	int deptno;
 	
-	//default cons
-	public A_08_Emp()
-	{
-		
-	}
-	
-	//para cons
-	public A_08_Emp(int eid ,String name ,int sal ,int deptno)
-	{
-		this.eid=eid;
-		this.name=name;
-		this.sal=sal;
-		this.deptno=deptno;
-	}
-
-	@Override
-	public String toString() {
-		return "A_08_Emp [eid=" + eid + ", name=" + name + ", sal=" + sal + ", deptno=" + deptno + "]";
-	}
-
-	@Override
-	public int compareTo(A_08_Emp o) {
-		
-		int diff ;
-//		diff = this.deptno-o.deptno;
-//		
-//		if(diff ==0)
-//		{
-//			diff = this.name.compareTo(o.name);
-//				if(diff ==0)
-//				{
-					diff = this.eid-o.eid;
-//				}
-//		}
-		return diff;
-	}
-
-	
-	
-	
-	
-	
-}
-
-
-/*
- int eid;
+	int eid;
 	String name;
 	int sal;
 	int deptno;
@@ -118,7 +68,7 @@ public class A_08_Emp implements Comparable<A_08_Emp>
 	
 }
 
- Comparable Functional Interface having one abstract method
+ /*Comparable Functional Interface having one abstract method
  
  public int compareTo(Object o){};
 
@@ -127,6 +77,5 @@ public class A_08_Emp implements Comparable<A_08_Emp>
   
  public int compareTo(Object o1 , Object o2){};
  
- 
- 
-*/
+*/ 
+

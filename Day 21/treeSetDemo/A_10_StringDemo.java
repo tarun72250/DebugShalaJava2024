@@ -9,7 +9,6 @@ public class A_10_StringDemo
 {
 	public static void main(String[] args) 
 	{
-
 		//anonymous fn
 //		SortedSet<String> name = new TreeSet<>( new Comparator<String>()
 //				{
@@ -45,6 +44,7 @@ public class A_10_StringDemo
 		name.add("Nimesh");
 		name.add("Naman");
 		name.add("Hitanshi");
+		//name.add(null); In TreeSet null can't stored
 		
 		for(String s:name)
 		{

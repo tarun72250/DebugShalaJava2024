@@ -11,7 +11,42 @@ public class A_12_HashMapDemo {
 
 	public static void main(String[] args) {
 		
-		Map<String , Integer > m = new HashMap<>();
+		Map<Integer, String> m = new HashMap<>();
+		m.put(10,"Nitesh");
+		m.put(11,"Pravesh");
+		m.put(12,"Jitesh");
+		m.put(13,"Gitesh");
+		m.put(14,"Sukesh");
+		m.put(15,"Nivesh");
+		m.put(17,"Nilesh");
+		m.put(18,"Rajesh");
+		
+		System.out.println(m);
+		
+		
+//		for(int i=0; i<m.size();i++)
+//		{
+//			System.out.println(m.get(i));
+//		}
+		
+		
+		
+		for(Map.Entry<Integer, String> e : m.entrySet())
+		{
+			System.out.println(e);
+			System.out.println();
+			System.out.println(e.getKey()+" : "+e.getValue());
+		}
+	
+		
+		
+	}
+
+}
+
+
+/*
+	Map<String , Integer > m = new HashMap<>();
 		m.put("One", 1);
 		m.put("Two", 2);
 		m.put("Three", 3);
@@ -58,6 +93,5 @@ public class A_12_HashMapDemo {
 			System.out.println(e.getKey()+" : "+e.getValue());
 		}
 
-	}
 
-}
+*/

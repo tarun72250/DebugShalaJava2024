@@ -2,8 +2,7 @@ package treeSetDemo;
 
 import java.util.Comparator;
 
-//public class A_09_Employee implements  Comparable<A_09_Employee>
-public class A_09_Employee implements Comparator<A_09_Employee>
+class A_09_Employee
 {
 	int eid;
 	String name;
@@ -31,11 +30,19 @@ public class A_09_Employee implements Comparator<A_09_Employee>
 	}
 
 	
-	public int compare(A_09_Employee o1, A_09_Employee o2) 
-	{
-		int diff=o1.sal-o2.sal;
-		
-		return diff;
-	}
+//	 @Override
+//	 public int compareTo(A_09_Employee o) {
+//	        return o.sal - this.sal; // Descending order by salary
+//	 }
 
+}
+
+//If we implements Comparator
+class EmployeeComparator implements Comparator<A_09_Employee> 
+{
+    @Override
+    public int compare(A_09_Employee o1, A_09_Employee o2) {
+        // Your sorting logic here (e.g., by salary in descending order)
+        return o2.sal - o1.sal; // Descending order by salary
+    }
 }

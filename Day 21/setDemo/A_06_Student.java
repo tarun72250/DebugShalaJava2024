@@ -1,8 +1,12 @@
 package setDemo;
 
+//LinkedHashSet :- no need to use for LinkedHasSet because we use LinkedHashSet for simple insertion pf order be preserved.
+
+
+
 //if i should compare myself for HashSet implementation
-//LinkedHashSet :- 
-public class A_06_Student implements Comparable<A_06_Student>{
+public class A_06_Student implements Comparable<A_06_Student>
+{
 //public class A_06_Student {
 	
 	private int sid;

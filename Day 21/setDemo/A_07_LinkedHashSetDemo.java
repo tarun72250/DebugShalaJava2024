@@ -15,53 +15,7 @@ public class A_07_LinkedHashSetDemo
 	public static void main(String[] args) 
 	{
 		
-		
-		//Insertion of order will be presereved
-		Set <String> set = new LinkedHashSet<>();
-		set.add("Nitesh");
-		set.add("Vishal");
-		set.add("Pravesh");
-		set.add("Arpit");
-		set.add("Balkrishna");
-		set.add("Hitanshi");
-		set.add("Rajat");
-		set.add("Prakash");
-		set.add("Sumit");
-		set.add("Nitesh");//duplicates are not allowed
-		set.add(null);//only one null value should be allowed
-		
-		//1.way
-//		for( String s : set)
-//		{
-//			System.out.println(s);
-//		}
-		 
-		Set <A_06_Student> s = new LinkedHashSet<>();
-		s.add(new A_06_Student(101,"Nitesh",94.0f,"pune"));  // s.add new A_06_Student(same);
-		s.add(new A_06_Student(102,"Mehak",92.0f,"pune"));
-		s.add(new A_06_Student(103,"Asfiya",93.0f,"nashik"));
-		s.add(new A_06_Student(104,"Sumir",96.0f,"Indore"));
-		s.add(new A_06_Student(105,"Manas",91.0f,"pune"));
-		s.add(new A_06_Student(106,"Farhan",92.0f,"Indore"));
-		s.add(new A_06_Student(107,"Mahesh",98.0f,"mumbai"));
-		s.add(new A_06_Student(108,"Nikhil",94.0f,"mumbai"));
-		s.add(new A_06_Student(109,"Anup",92.0f,"nashik"));
-		s.add(new A_06_Student(103,"Asfiya",94.0f,"nashik"));//s.add new A_06_Student(same);
-		
-		//2 way
-		Iterator <A_06_Student> i = s.iterator();
-		
-		while(i.hasNext())
-		{
-			System.out.println(i.next());
-		}
-	}
-}
-
-
-
-/*
-//insertion of order will be preserved
+		//insertion of order will be preserved
 		Set <Integer> numbers = new LinkedHashSet<>();
 		numbers.add(10);
 		numbers.add(50);//asskcdsjk
@@ -69,16 +23,16 @@ public class A_07_LinkedHashSetDemo
 		numbers.add(30);//reason why no are random
 		numbers.add(20);//no duplicates are allowed
 		numbers.add(40);
-		
+				
 		System.out.println(numbers);//toSting() call
 
 		System.out.println(numbers.contains(20));//true
-		
+				
 		System.out.println(numbers.isEmpty());//false
-		
+				
 		System.out.println(numbers.size());//5
-		
-		
+				
+				
 		Set <Integer> set = new LinkedHashSet<>();
 		set.add(70);
 		set.add(20);
@@ -88,7 +42,7 @@ public class A_07_LinkedHashSetDemo
 		set.add(20);//duplicates are not allowed in Set
 		set.add(10);
 		set.add(30);
-		
+				
 		for(Integer i:set)
 		{
 			System.out.println(i);
@@ -122,13 +76,36 @@ public class A_07_LinkedHashSetDemo
 		s.add(new A_06_Student(107,"Mahesh",98.0f,"mumbai"));
 		s.add(new A_06_Student(108,"Nikhil",94.0f,"mumbai"));
 		s.add(new A_06_Student(109,"Anup",92.0f,"nashik"));
-		
+		s.add(new A_06_Student(103,"Asfiya",93.0f,"nashik"));
+
 		//advanced for loop
 		for(A_06_Student stu :s)
 		{
 			System.out.println(stu);
 		}
+				
 		
+		//1.way
+//		for( String s : set)
+//		{
+//			System.out.println(s);
+//		}
+		 
+	
+		
+		//No, LinkedHashSet itself doesn't directly use the Comparable interface for its internal ordering. 
+		//LinkedHashSet maintains insertion order,
+		//meaning elements are stored and retrieved in the order they were added.
+		
+		//2 way
+		
+	}
+}
+
+
+
+/*
+
 
 
 */

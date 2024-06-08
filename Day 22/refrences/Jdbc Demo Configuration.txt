@@ -1,0 +1,15 @@
+1. download MySQL connector 8 jar file url:-
+ 
+https://jar-download.com/artifacts/mysql/mysql-connector-java/8.0.11/source-code
+
+2. Right Click on project click on build path 
+   then click on configure on build path.
+   then click on libraries 
+   then classPath select 
+   Add external jars.
+   now select jar file 
+   and apply and close.
+
+3. check that com.mysql.cj.jdbc.Driver class in refenced libraries.
+
+4. follow all the steps to established the connection.

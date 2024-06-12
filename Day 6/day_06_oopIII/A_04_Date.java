@@ -3,10 +3,10 @@ package day_06_oopIII;
 public class A_04_Date {
 	
 	private int dd; // data members
-	private int mm;
+	private int mm; // object level info
 	private int yy;
 	int a;
-	static int count; //static data members
+	private static int count; //static data members// class level info
 	
 	
 	static // static block
@@ -19,10 +19,12 @@ public class A_04_Date {
 	{
 		count++;
 		a=count;
-		dd=1;
-		mm=1;
-		yy=1970;
+		dd=00;
+		mm=00;
+		yy=00;
 	}
+	
+	
 	public A_04_Date(int dd,int mm,int yy) // parametrized constructor
 	{
 		count++;
@@ -33,15 +35,16 @@ public class A_04_Date {
 	}
 	
 	
-	public A_04_Date(Date d) // para constructor
+	public A_04_Date(Date d) // copy constructor
 	{
 		count++;
 		a=count;
 		this.dd=d.dd;
 		this.mm=d.mm;
-		this.yy=d.yy;
-		
+		this.yy=d.yy;	
 	}
+	
+	
 	public void showDate(char ch) // method
 	{
 		System.out.println("Count"+a);

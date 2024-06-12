@@ -6,6 +6,17 @@ public class A_01_Date {
 	private int mm;//state 
 	private int yy;//always data members should be private
 
+		//instance member method
+		public void showDate()
+		{
+			System.out.println(dd+"  "+mm+"  "+yy);
+		}
+		
+		
+}
+
+/*
+ 
 //Note:-If we do not specify any constructor in class 
 //So always default cons it is present
 //if we define any cons in class so we always define default cons.
@@ -53,20 +64,12 @@ public class A_01_Date {
 			this.mm=d.mm;
 			this.yy=d.yy;
 		}
-
-		//instance member method
-		public void showDate()
-		{
-			System.out.println(dd+" / "+mm+" / "+yy);
-			
-		}
 		
 		public void showDate(char ch)
 		{
 			System.out.println(dd+" "+ch+mm+ch+" "+yy);
 		}
 
-}
-
+ */
 
 

@@ -14,9 +14,9 @@ public class Date {
 	   //no-arg or default constructor
 	   public Date()
 	   {
-//		dd=0;
-//		mm=0;
-//		yy=0;
+		dd=0;
+		mm=0;
+		yy=0;
 	   }	
 	   
 	   //parameterised construtors		

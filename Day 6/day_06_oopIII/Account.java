@@ -10,7 +10,7 @@ public class Account {
 	   //its not a good approach to initialize the static data member value at time of declaration
 	   private static double int_rate; 
 	    
-	   //for static dm declare and initialized static block 
+	   //for static dm declare we initialized static block 
 	   static
 	   {
 		int_rate = 4.5f;
@@ -65,6 +65,9 @@ public class Account {
 		  System.out.println("Balance :"+balance);
 		 double bal =balance+(balance*int_rate/100);
 		 System.out.println("Balance with interest"+bal);
-	   }	
+	   }
 
+	
+	   
+	   
 }

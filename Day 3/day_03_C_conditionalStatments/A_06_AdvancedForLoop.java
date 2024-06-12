@@ -14,7 +14,7 @@ public class A_06_AdvancedForLoop
     	}
 
     	//Using String array
-        List<String> names = new ArrayList<>();
+        List<String> names = new ArrayList();
         names.add("Alice");
         names.add("Bob");
         names.add("Charlie");

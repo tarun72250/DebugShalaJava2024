@@ -4,6 +4,13 @@ public class A_03_CurrentAccount extends A_03_Account {
 
 	 private double overdraftAmt;
 
+	    //default cons
+	 	public A_03_CurrentAccount()
+	 	{
+	 		super();
+	 	}
+	 	
+	 	//para
 	    public A_03_CurrentAccount(int accNumber, String accName, double balance, double overdraftAmt) {
 	        super(accNumber, accName, balance);
 	        this.overdraftAmt = overdraftAmt;

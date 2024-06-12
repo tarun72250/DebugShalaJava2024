@@ -2,10 +2,10 @@ package day_06_oopIII;
 
 public class A_03_Book {
 	
-	int bookid; 		 // data members
-	float price;
+	private int bookid; 		 // instance data members
+	private float price;		//object level info
 	
-	static int count; 	//static members
+	private static int count; 	//static members , class level info
 	
 	
 	static 				//static block
@@ -17,15 +17,20 @@ public class A_03_Book {
 	public A_03_Book()  			//default constructor
 	{
 		count++;
-		bookid=count	;
+		bookid=count;
 		this.price=0;
 	}
+	
+	
 	public A_03_Book(float price)	//parametrized constructor
 	{
 		count++;
 		bookid=count;
 		this.price=price;
 	}
+	
+	
+	
 	public void showDetails()		//methods
 	{
 		System.out.println("Book id :" +bookid+" price : "+price);

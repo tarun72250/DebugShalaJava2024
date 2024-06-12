@@ -6,10 +6,18 @@ public class A_01_DateDemo {
 	{		
 		
 		A_01_Date d ;//refrence variable 
-		d = new A_01_Date();//d is object-using new allocating memory on heap
+		d = new A_01_Date();//d is object-using new allocating memory on heap and calls concrtuctor
 		d.showDate();//caling appropriate method
 		
-		A_01_Date d2 = new A_01_Date(22,12,2024);
+	
+		
+	}
+
+}
+
+/*
+ 
+	A_01_Date d2 = new A_01_Date(22,12,2024);
 		d2.showDate();
 		
 		A_01_Date d3 = new A_01_Date(11,22);
@@ -57,7 +65,4 @@ public class A_01_DateDemo {
 		int n1=10,m1=10;
 		String result1 = (n1 == m1) ? "Same" : "Different";
 		System.out.println(result1);
-		
-	}
-
-}
+*/

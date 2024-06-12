@@ -16,7 +16,8 @@ public class A_01_TestThrow {
     }  
     
     //main method  
-    public static void main(String[] args) {  
+    public static void main(String[] args)
+    {  
             A_01_TestThrow obj = new A_01_TestThrow();  
             obj.checkNum(-3);  
             System.out.println("Rest of the code..");  

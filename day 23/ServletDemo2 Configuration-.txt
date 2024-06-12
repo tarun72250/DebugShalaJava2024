@@ -60,4 +60,5 @@ check console they print output in console
 
 6. if u want to write in chrome page 
 PrintWritter out = resp.getWritter();
-out.print("<h1>Hello</h1>");
+out.print("<h1>Hello from DebugShala...!</h1>");
+

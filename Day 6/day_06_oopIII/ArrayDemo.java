@@ -4,7 +4,7 @@ public class ArrayDemo {
 	
 	public static void main(String[]args)
 	{
-		//declaration of array
+		/*//declaration of array
 		int [] arr;
 		//initilization of array
 		arr = new int[5]; 
@@ -36,8 +36,8 @@ public class ArrayDemo {
 		{
 			System.out.println(arr1[i]);
 		}
-		
-
+		*/
+		//2 D array
 		//#Matrix:Array of Array,2d array:-
 		//#Declartion:-
 	     int [][] matrix;
@@ -63,7 +63,33 @@ public class ArrayDemo {
 	     matrix[2][1] = 8;
 	     matrix[2][2] = 9;
 	     
-	     for(int i=0 ; i<3 ; i++)
+	     
+	     for(int i=0 ; i<matrix.length;i++)//0 1 2
+	     {
+	    	 for( int j=0 ; j<matrix[i].length ; j++)//00 01 02  |10 11 12 | 20 21 22
+	    	 {
+	    		 System.out.print(matrix[i][j]+" ");//00
+	    	 }
+	    	 System.out.println();
+	     }
+	    
+		 
+	     int [][] matrix1 = {{1,4},{5},{9,7}};
+	     for(int i=0 ; i<3;i++)//0 1 2
+	     {
+	    	 for( int j=0 ; j<matrix1[i].length ; j++)//00 01 02  |10 11 12 | 20 21 22
+	    	 {
+	    		 System.out.print(matrix1[i][j]+" ");//00
+	    	 }
+	    	 System.out.println();
+	     }
+	     
+	   
+	}
+
+}
+/*
+ for(int i=0 ; i<3 ; i++)
 	     {
 	    	 for(int j=0 ; j<matrix[i].length ; j++)
 	    	 {
@@ -96,8 +122,4 @@ public class ArrayDemo {
 			datearr[i].showDate();
 		 }
 		 
-		 
-	   
-	}
-
-}
+*/

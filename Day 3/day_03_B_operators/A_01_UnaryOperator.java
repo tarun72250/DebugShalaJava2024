@@ -4,6 +4,37 @@ public class A_01_UnaryOperator {
 
 	public static void main(String[]args)
 	{
+		//unary operator
+//		int n = 10;
+//		System.out.println(n);//10
+//		System.out.println(n++);//10  post increment
+//		System.out.println(n);//11
+//		System.out.println(n--);//11 post decrement
+//		System.out.println(n);//10
+//		
+//		System.out.println(n);//10
+//		System.out.println(++n);//11  pre increment
+//		System.out.println(n);//11
+//		System.out.println(--n);//10 post decrement
+//		System.out.println(n);//10
+		
+		
+		
+		
+		int gautam = 20;
+		
+		System.out.println(gautam++);//20
+		System.out.println(gautam);//21
+		System.out.println(--gautam);//20
+		System.out.println(++gautam);//21
+		System.out.println(gautam++);//21
+		System.out.println(gautam);
+		System.out.println(gautam--);//21
+		System.out.println(gautam);
+	}
+}
+
+/*
 		int n =10;
 		System.out.println(n);
 		//post increement
@@ -65,5 +96,4 @@ public class A_01_UnaryOperator {
 		
 	    String result =	var1 > var2 ?"True":"false";
 		System.out.println(result);
-	}
-}
+*/

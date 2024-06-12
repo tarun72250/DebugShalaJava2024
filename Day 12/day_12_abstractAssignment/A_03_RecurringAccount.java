@@ -4,8 +4,10 @@ public class A_03_RecurringAccount extends A_03_Account{
 
 	private double recurringAmt;
     private int noOfInstallments;
+    
     private static double intRate = 0.06;
 
+    //para cons
     public A_03_RecurringAccount(int accNumber, String accName, double balance, double recurringAmt, int noOfInstallments) {
         super(accNumber, accName, balance);
         this.recurringAmt = recurringAmt;
@@ -21,5 +23,7 @@ public class A_03_RecurringAccount extends A_03_Account{
     @Override
     public void calculateBalance() {
         // Custom implementation if needed
+    
+    	
     }
 }

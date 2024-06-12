@@ -4,19 +4,22 @@ public class AccountDemo {
 
 	public static void main(String[] args) {
 		
+		
 		Account a1; //declaration refrence variable 
 		a1 = new Account(); //default cons calling
 	    System.out.println("Current rate : "+Account.getIntRate());//Account.getIntRate() is static method to access Account class int_rate value .
 		a1.calBalance(); // calling by object
 		
-		/*System.out.println();
+		System.out.println();
 		Account a2 = new Account(200,200,3.5);//parametrized cons calling
 		a2.calBalance();//  calling by object
-		//Account.updateRate(4.8f);// calling static method directly  
+		Account.updateRate(5.5f);// calling static method directly  
 		System.out.println("Current rate : "+Account.getIntRate()); // called static variable directly
 		a1.calBalance(); // calling by object
 	    a2.calBalance(); // calling by object
 
+	    
+	    /*
 	    System.out.println();
 	    Account a3; //declaration refrence variable 
 		a3 = new Account(); //initilization

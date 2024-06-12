@@ -13,14 +13,14 @@ public class A_02_TestThrows
     public static void main(String[] args) 
     {  
         A_02_TestThrows obj = new A_02_TestThrows();  
-        try 
-        {  
+//        try 
+//        {  
             System.out.println(obj.divideNum(45, 0));  
-        }  
-        catch (ArithmeticException e)
-        {  
-            System.out.println("\nNumber cannot be divided by 0");  
-        }  
+//        }  
+//        catch (ArithmeticException e)
+//        {  
+//            System.out.println("\nNumber cannot be divided by 0");  
+//        }  
           
         System.out.println("Rest of the code..");  
     }  

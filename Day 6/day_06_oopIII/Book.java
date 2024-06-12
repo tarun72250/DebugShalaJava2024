@@ -38,9 +38,12 @@ public class Book {
 //		}
 	}
 	
+	//Getter () for bookid
 	public int getBookid() {
 		return bookid;
 	}
+	
+	//Setter () for bookid
 	public void setBookid(int bookid) {
 		this.bookid = bookid;
 	}

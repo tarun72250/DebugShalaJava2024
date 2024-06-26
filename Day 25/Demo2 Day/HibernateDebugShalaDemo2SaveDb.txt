@@ -1,0 +1,41 @@
+HiberNateDebugShalaDemo2SaveEntitydb
+
+1.Create Maveen Project 
+	next
+	select Internal
+	search - quick start 
+	next
+	Group-id islike package name
+	Artifact id islike Project name
+	Package name same as Group id
+	Finish 
+that take little bit time to download all dependencies from maven repository.
+ 
+2. We did not explicitely download the jar file of hibernate 
+	we said maven to download these all dependency from maven repo.
+
+	copy and paste the dependency of hibernate core and MySQL connector dependency download from google and paste in pom.xml. 
+	
+	right click on project
+	click maveen 
+	update project
+
+
+3.create database and table Product
+create database hibernate; 
+Create Table Product
+( pid int primary key,
+pname varchar(45),
+price float(10),
+qty float(10)
+);
+
+
+create packages undersrc/main/java 
+	com.tarun.entity
+		Product.java
+	com.tarun.test
+		SaveObjectTest.java
+	src/main/java
+		hibernate.cfg.xml
+

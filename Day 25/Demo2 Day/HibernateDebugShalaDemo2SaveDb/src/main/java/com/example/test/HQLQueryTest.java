@@ -12,7 +12,8 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 import com.example.entity.Product;
 
-public class HQLQueryTest {
+public class HQLQueryTest 
+{
 
 	public static void main(String[] args) {
 		// create the service
@@ -28,7 +29,8 @@ public class HQLQueryTest {
 		Session session = sf.openSession();
 
 		/*
-		 * //HQL - class , property //Select * from Product Query q =
+		 * //HQL - class , property //Select * from Product 
+		 * Query q =
 		 * session.createQuery("from Product");
 		 * 
 		 * List<Product> products = q.getResultList();
@@ -38,7 +40,8 @@ public class HQLQueryTest {
 		 */
 
 		/*
-		 * //SQL QUERY :- Select some column query org.hibernate.Query<Object[]> q =
+		 * //SQL QUERY :- Select some column 
+		 * query org.hibernate.Query<Object[]> q =
 		 * session.createQuery("select pid,pname from Product where qty = 5",
 		 * Object[].class);
 		 * 
